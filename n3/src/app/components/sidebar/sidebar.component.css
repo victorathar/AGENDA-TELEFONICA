@@ -1,0 +1,109 @@
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 18vw;
+  background-color: #00000054;
+  backdrop-filter: blur(32px);
+  font-family: "JetBrains Mono", monospace;
+  color: #EEF0F2;
+  gap: 17vh;
+  position: fixed;
+  border-radius: 0 20px;
+
+}
+
+.sidebar-login {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  font-size: 1.3rem;
+  letter-spacing: 3.5px;
+}
+
+.foto-perfil {
+  width: 50%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 60px #585858;
+}
+
+
+.sidebar-welcome {
+  padding: 0 5%;
+}
+
+
+.botoes-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+
+.botao-adicionar {
+  text-decoration: none;
+  background-color: #bdbdbd;
+  color: #000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 75%;
+  cursor: pointer;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.botao-adicionar:hover {
+  background-color: #fff;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+
+
+.botao-adicionar-novo {
+  text-decoration: none;
+  background-color: #00c7b6;
+  color: #000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 75%;
+  cursor: pointer;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+
+
+
+.botao-adicionar-novo:hover {
+  background-color: #00ebd7;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: 0px 0px 60px #00ebd7;
+}
+
+
+
+
+.botao-desconectar {
+  margin-top: 27.5vh;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.botao-desconectar:hover {
+  color: #bdbdbd;
+  transition: 0.2;
+}

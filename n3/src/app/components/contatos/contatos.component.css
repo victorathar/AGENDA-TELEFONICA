@@ -1,0 +1,39 @@
+#contatos {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  z-index: 1;
+}
+
+.contatos-top {
+  display: flex;
+  padding: 2.5% 5%;
+  gap: 35vw;
+}
+
+.contatos-top-title {
+  font-size: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 900;
+}
+
+
+.contatos-top-pesquisa {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5%;
+  background-color: #e0e0e0;
+  width: 250px;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  gap: 10px;
+}
+
+
+.contatos-salvos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

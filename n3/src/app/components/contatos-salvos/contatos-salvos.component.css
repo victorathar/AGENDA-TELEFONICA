@@ -1,0 +1,114 @@
+.contato-card {
+  display: flex;
+  background-color: #f9f9f98e;
+  backdrop-filter: blur(32px);
+  gap: 10px;
+  width: 60vw;
+  height: 7vh;
+  margin-bottom: 2%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 4.5%;
+  color: #525252;
+  margin-top: 2.25vh;
+  border-radius: 5px;
+  box-shadow: 3px 3px 16px 2px #797979bd;
+}
+
+
+.contato-label {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  position: static;
+  font-weight: bolder;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.contato-dado {
+  position: static;
+}
+
+.contato-espaco {
+  z-index: 10;
+  position: static;
+}
+
+
+/* -------------- BOTÕES -------------- */
+
+.contato-salvo-botoes {
+  display: flex;
+  gap: 10%;
+}
+
+
+.botoes {
+  display: flex;
+  width: 2.5vw;
+  height: 4vh;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.botoes:hover {
+  background-color: rgba(151, 151, 151, 0.555);
+}
+
+.imagem {
+  width: 90%;
+}
+
+.espacamento {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+
+.modal {
+  z-index: 1000;
+  margin-left: 50vw;
+  margin-top: 35vh;
+  position: fixed;
+}
+
+.modal::backdrop {
+  background-color: #0000006b;
+}
+
+
+
+.modal-botao {
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #252525;
+  color: white;
+  font-weight: bolder;
+}
+
+.modal-botao:hover {
+  cursor: pointer;
+}
+
+.botao-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+}
+
+.modal-paragrafo {
+  margin-top: 20px;
+}
+
+.modal-titulo {
+  display: flex;
+  gap: 20px;
+}

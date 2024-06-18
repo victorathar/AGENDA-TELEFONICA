@@ -1,0 +1,49 @@
+<div *ngFor="let contato of contatos" class="contato-card">
+  <!-- Dados do contato -->
+  <div class="contato-salvo">
+    <p class="contato-label"><b> NOME: </b></p>
+    <p>{{ contato.nome }}</p>
+  </div>
+  <p> | </p>
+  <div class="contato-salvo">
+    <p class="contato-label"><b> TELEFONE: </b></p>
+    <p>{{ contato.telefone }}</p>
+  </div>
+  <p> | </p>
+  <div class="contato-salvo">
+    <p class="contato-label"><b> E-MAIL: </b></p>
+    <p>{{ contato.email }}</p>
+  </div>
+  <p> | </p>
+  <div class="contato-salvo">
+    <p class="contato-label"><b> ENDEREÇO: </b></p>
+    <p>{{ contato.endereco }}</p>
+  </div>
+
+  <!-- Botões de ação -->
+  <div class="contato-salvo-botoes">
+    <button [routerLink]="['/editar', contato.id]" routerLinkActive="router-link-active" class="botoes">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPBJREFUSEvVldkRwjAMRDedQCfQCVQCVAKdQCmhEvAytkfjRLHkOB/kL4ffk9ZHBmx8DRvz0VNwB/AOBV9l0aXgAIAf7iqdHQG8xDccc4r3NykpBc8wkJKlq4SzGI6TRWVJKfhEsjU6QscIl5JzePYga42AsbBbdiQlrP4HXyOQmROeJJNoWzqQ8ASkZD83cV7BHJzcnHkp8QiscM5LXsJWgQfO1ZS5FoEVznQmy9wiSINkvFrmXQTqhPboYAneHJHnRG+K6L8EluO61hE3Gc+m2cOOu/Bi+CdoEp5JXAjqTq5V535v/bG4wVpEzSBt4BeV+kAZ5MHlwgAAAABJRU5ErkJggg==" />
+    </button>
+
+    <button (click)="openModal(contato.id)" class="botoes">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAIJJREFUSEtjZKAxYKSx+QzEWODAwMCwH4dDGoHiDfgcScgCfIaDzH3AwMCQyMDAcACXJegW/KdSkMHNpbsFVPIAwhhccUBuUGGYN2oBepyNBhHBVDwaRKNBhAgBmpdFoBoMVNmQAkCVjiPBrA1VADK8ngRLcNZshKpMUnyAVS3NLQAA6kwZGR1E8YsAAAAASUVORK5CYII=" />
+    </button>
+  </div>
+</div>
+
+<!-- Diálogo de confirmação de exclusão -->
+<dialog class="modal" #deleteDialog>
+  <div class="modal-titulo">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOxJREFUSEu9lNERwkAIRDedaCfaiVYSrUQ70U60ExOcXIacLHCjka9M7oa3CwcdVo5u5fxoBdwmQUcAz4y4FsAJQK8A118DXiqhqN9nXGQdaPWFcx4/5L8bGcAGwINk2UYuMgBLfdpFBPDUF4jrIgLU6st93XC3Fx7AUm8BxAl14QGs2jMAdcEArPYMQF0wwGV8fgfjaXoAmWxZIYuwAJmXw4broxcWQBbaLppQcn6fVsh8XAMkcdmYVg6vROZc1ABZCVIiFhnAwoUGROpbqibNfq9zDYjUtwBmF38FtChM342WXTpR9Cq+TsQSDAvkLhngttEwAAAAAElFTkSuQmCC" />
+    <h1>AVISO!</h1>
+  </div>
+  <p class="modal-paragrafo">Você realmente deseja EXCLUIR este contato?</p>
+  <div class="botao-grid">
+    <button class="modal-botao" (click)="confirmDelete()">EXCLUIR</button>
+    <button class="modal-botao" (click)="closeModal()">CANCELAR</button>
+  </div>
+</dialog>

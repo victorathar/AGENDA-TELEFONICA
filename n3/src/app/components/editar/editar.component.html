@@ -1,0 +1,83 @@
+<section id="editar">
+  <h1 class="editar-titulo">EDITAR</h1>
+
+  <div class="card-editar">
+    <div class="contato-salvo">
+      <p class="contato-label"><b> NOME: </b></p>
+      <p>{{ contato.nome }}</p>
+    </div>
+
+    <div class="contato-salvo">
+      <p class="contato-label"><b> TELEFONE: </b></p>
+      <p>{{ contato.telefone }}</p>
+    </div>
+
+    <div class="contato-salvo">
+      <p class="contato-label"><b> E-MAIL: </b></p>
+      <p>{{ contato.email }}</p>
+    </div>
+
+    <div class="contato-salvo">
+      <p class="contato-label"><b> ENDEREÇO: </b></p>
+      <p>{{ contato.endereco }}</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- FORMULARIO FORMS -->
+
+
+
+  <form (ngSubmit)="onSubmit()" class="formulario" [formGroup]="contatoForm" #formDir="ngForm">
+    <div class="editar-botoes-grid">
+      <div class="editar-grid-contato">
+        <label class="labal-botao" for="nome">NOME:</label>
+        <input type="text" class="input" id="nome" name="nome" placeholder="Digite um NOME" formControlName="nome" />
+        <div *ngIf="nome.invalid" class="validation-error">
+          <p class="campo-obrigatorio"> O NOME É OBRIGATÓRIO</p>
+        </div>
+      </div>
+
+      <div class="editar-grid-contato">
+        <label class="labal-botao" for="telefone">TELEFONE:</label>
+        <input type="number" class="input" id="telefone" name="telefone" placeholder="Digite um TELEFONE"
+          formControlName="telefone" />
+        <div *ngIf="telefone.invalid" class="validation-error">
+          <p class="campo-obrigatorio"> O TELEFONE É OBRIGATÓRIO</p>
+        </div>
+      </div>
+
+      <div class="editar-grid-contato">
+        <label class="labal-botao" for="email">EMAIL:</label>
+        <input type="text" class="input" id="email" name="email" placeholder="Digite um EMAIL"
+          formControlName="email" />
+        <div *ngIf="email.invalid" class="validation-error">
+          <p class="campo-obrigatorio"> O EMAIL NÃO É VALIDO</p>
+        </div>
+      </div>
+
+      <div class="editar-grid-contato">
+        <label class="labal-botao" for="endereco">ENDEREÇO:</label>
+        <input type="text" class="input" id="endereco" name="endereco" placeholder="Digite um ENDEREÇO"
+          formControlName="endereco" />
+      </div>
+
+      <div class="grid-botao-salvar">
+        <button type="submit" class="modal-botao" [disabled]="contatoForm.invalid">{{ btnSalvar }} SALVAR </button>
+        <a href="http://localhost:4200/contatos" routerLinkActive="router-link-active" class="modal-botao-cancelar">
+          CANCELAR </a>
+      </div>
+    </div>
+  </form>
+
+
+
+
+
+
+</section>

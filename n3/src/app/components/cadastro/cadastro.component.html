@@ -1,0 +1,72 @@
+<section id="cadastro">
+
+  <h1 class="cadastro-titulo">Cadastro de usuário</h1>
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="contatoForm" class="formulario">
+    <div class="form-grid">
+      <div class="form-grid-cont">
+        <label class="labal-botao" for="nome">Nome</label>
+        <input type="text" class="input" id="nome" name="nome" placeholder="Digite o NOME" formControlName="nome" />
+        <div *ngIf="nome.invalid" class="validation-error">
+          <p class="validation-error"> O Nome é obrigatório</p>
+        </div>
+      </div>
+
+      <div class="form-grid-cont">
+        <label class="labal-botao" for="telefone">Telefone</label>
+        <input type="number" class="input" id="telefone" name="telefone" placeholder="Digite o TELEFONE"
+          formControlName="telefone" />
+        <div *ngIf="telefone.invalid" class="validation-error">
+          <p class="validation-error"> O Telefone é obrigatório</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-cont">
+
+      <div class="form-cont-a">
+        <label class="labal-botao" for="email">E-mail</label>
+        <input type="text" class="input" id="email" name="email" placeholder="Digite o EMAIL" formControlName="email" />
+        <div *ngIf="email.invalid" class="validation-error">
+          <p class="validation-error"> O Email é obrigatório</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="form-cont-a">
+        <label class="labal-botao" for="endereco">Endereço</label>
+        <input type="text" class="input" id="endereco" name="endereco" placeholder="Digite o ENDEREÇO"
+          formControlName="endereco" />
+
+      </div>
+    </div>
+
+
+    <div class="acoes">
+      <button type="submit" class="botao" [disabled]="contatoForm.invalid">Salvar</button>
+      <a href="http://localhost:4200/contatos" class="botao-cancelar">Cancelar</a>
+    </div>
+
+
+    <dialog class="modal">
+      <div class="modal-titulo">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKtJREFUSEvtlNENgCAMRI9NdBOdTJ1EN3EVR9FLIGmA0KLyR3/UEN9Lr1WHxuUa89EFasI9ohDRAGACcMSZ/RER4bsXbI9glZKvAgm/AIx/dqDCKXvbgQmuCZglh8bWZZnhJQHhi4fPQlIFLwkIOp8OeGUHlLDCtmQHmvusSzOIJYRy181wbQY8lxI+V8EtAinhfbLn2t/OuqZhFhovObcKqsHhhS5Qo2se0Q2p5R4Zjo+H2gAAAABJRU5ErkJggg==" />
+        <h1>Contato cadastrado com SUCESSO!</h1>
+      </div>
+
+      <div class="botao-grid">
+        <a class="modal-botao-cadastro" (click)="fechar()">OK!</a>
+      </div>
+    </dialog>
+  </form>
+
+
+
+
+
+
+
+</section>

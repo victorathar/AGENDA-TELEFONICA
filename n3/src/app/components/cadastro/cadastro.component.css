@@ -1,0 +1,223 @@
+#cadastro {
+  width: 82vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5%;
+}
+
+
+.cadastro-titulo {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+
+.labal-botao {
+  font-weight: bolder;
+
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f9f9f973;
+  backdrop-filter: blur(16px);
+
+  height: 57vh;
+  width: 45vw;
+  padding: 10px;
+  border-radius: 7.5px;
+  font-family: "JetBrains Mono", monospace;
+  justify-content: center;
+  box-shadow: 3.5px 4px 16px 2px #797979bd;
+
+}
+
+
+.acoes {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 7.5vw;
+
+}
+
+.botao {
+  transition: 0.5s;
+  width: 200px;
+  background-color: #464646;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-bottom: 7.5%;
+
+}
+
+
+
+.cadastrar-pessoas {
+  padding: 2rem 0;
+  margin: 0 10%;
+}
+
+.cadastrar-pessoas form {
+  background: #A3B18A;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.cadastrar-pessoas form label {
+  color: #3A5A40;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.cadastrar-pessoas form .input {
+  border: none;
+  height: 40px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+
+.cadastrar-pessoas form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+.form-grid {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 5%;
+  margin-bottom: 25px;
+
+}
+
+.form-grid-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 0 5%;
+}
+
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 2.4%;
+  height: 30vh;
+  gap: 25px;
+}
+
+
+.form-cont-a {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.input {
+  height: 5vh;
+  text-decoration: none;
+  border-color: #1b1b1b;
+  background-color: #eeeeee;
+}
+
+input {
+  margin-bottom: 1.5%;
+  text-decoration: none;
+}
+
+.modal-botao-cadastro {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #252525;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-titulo {
+  display: flex;
+  gap: 20px;
+}
+
+.botao-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+}
+
+.modal {
+  margin-left: 45vw;
+  margin-top: 35vh;
+}
+
+.modal::backdrop {
+  background-color: #0000006b;
+}
+
+
+
+.validation-error {
+  color: #cf3621;
+}
+
+
+
+.botao:disabled {
+  transition: 0.5s;
+  background-color: #797979bd;
+  cursor: default;
+}
+
+
+.botao-cancelar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: #464646;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-bottom: 7.5%;
+}

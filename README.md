@@ -1,5 +1,5 @@
 # 📓 Agenda Telefônica
-Este é um projeto de agenda telefônica estruturada utilizando **Angular** para o Frontend, **NestJS** para o Backend e **MySQL** para Banco de Dados.
+Este é um projeto de agenda telefônica estruturado utilizando **Angular** para o Frontend, **NestJS** para o Backend e **MySQL** para Banco de Dados.
 ____________________________________________________________________________________________________________________________________________
 
 ### 📋 Instalação
